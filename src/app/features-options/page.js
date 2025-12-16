@@ -5,7 +5,7 @@
  * and overview of upgrade options
  */
 
-import { Section, SectionHeading, Container, Icon } from "@/components/shared";
+import { Section, SectionHeading, Container, Icon, PremiumLots } from "@/components/shared";
 import { Button } from "@/components/ui";
 import { standardFeatures } from "@/config/standard-features";
 import upgradePackages from "@/config/upgrade-packages.json";
@@ -14,7 +14,7 @@ import { formatPrice } from "@/lib/formatters";
 // Page metadata
 export const metadata = {
   title: "Features & Options",
-  description: "Explore the standard features included in every Silverwood Heights home, plus available upgrade packages to customize your dream home.",
+  description: "Explore the standard features included in every Silver Wood Heights home, plus available upgrade packages to customize your dream home.",
 };
 
 export default function FeaturesOptionsPage() {
@@ -27,7 +27,7 @@ export default function FeaturesOptionsPage() {
             Features & Options
           </h1>
           <p className="text-lg text-ebony/70">
-            Every Silverwood Heights home comes with exceptional standard features. 
+            Every Silver Wood Heights home comes with exceptional standard features. 
             Elevate your home further with our curated upgrade packages.
           </p>
         </div>
@@ -168,12 +168,10 @@ export default function FeaturesOptionsPage() {
             Explore Floor Plans
           </Button>
         </div>
-      </Section>
 
-      {/* Note Section */}
-      <Section background="white" padding="sm">
-        <Container size="sm">
-          <div className="bg-dun/30 rounded-lg p-6 text-center">
+        {/* Upgrade Packages Note */}
+        <Container size="sm" className="mt-12">
+          <div className="bg-dun/30 rounded-lg p-4 text-center">
             <p className="text-sm text-ebony/70">
               <strong className="text-ebony">Note:</strong> Additional upgrade options 
               may be available on individual floor plans. Prices shown are estimates 
@@ -183,6 +181,9 @@ export default function FeaturesOptionsPage() {
           </div>
         </Container>
       </Section>
+
+      {/* Premium Lots Section - includes its own note */}
+      <PremiumLots showDescription={true} />
     </>
   );
 }

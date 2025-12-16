@@ -14,6 +14,8 @@
   --color-sage: #A4AC86;
   --color-reseda: #737A5D;
   --color-ebony: #414833;
+  --color-umber: #72470B;
+  --color-ochre: #AB680F;
 
   /* Typography */
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -33,7 +35,12 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     @apply text-ebony font-medium tracking-tight;
   }
@@ -64,33 +71,27 @@
 }
 
 @layer components {
+
   /* Premium Button Styles */
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 
-           font-medium rounded transition-all duration-200
-           focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
 
   .btn-primary {
-    @apply btn bg-reseda text-white hover:bg-reseda-600 
-           focus:ring-reseda-400;
+    @apply btn bg-reseda text-white hover:bg-reseda-600 focus:ring-reseda-400;
   }
 
   .btn-secondary {
-    @apply btn bg-dun text-ebony hover:bg-dun-300 
-           focus:ring-dun-400;
+    @apply btn bg-dun text-ebony hover:bg-dun-300 focus:ring-dun-400;
   }
 
   .btn-outline {
-    @apply btn border-2 border-reseda text-reseda 
-           hover:bg-reseda hover:text-white focus:ring-reseda-400;
+    @apply btn border-2 border-reseda text-reseda hover:bg-reseda hover:text-white focus:ring-reseda-400;
   }
 
   /* Card Component */
   .card {
-    @apply bg-white rounded-lg shadow-sm overflow-hidden
-           border border-dun-200 transition-shadow duration-200
-           hover:shadow-md;
+    @apply bg-white rounded-lg shadow-sm overflow-hidden border border-dun-200 transition-shadow duration-200 hover:shadow-md;
   }
 
   /* Section Container */
@@ -105,33 +106,26 @@
 
   /* Form Elements */
   .input {
-    @apply w-full px-4 py-3 rounded border border-dun-300
-           bg-white text-ebony placeholder-ebony/50
-           focus:outline-none focus:ring-2 focus:ring-reseda-400 
-           focus:border-transparent transition-all duration-200;
+    @apply w-full px-4 py-3 rounded border border-dun-300 bg-white text-ebony placeholder-ebony/50 focus:outline-none focus:ring-2 focus:ring-reseda-400 focus:border-transparent transition-all duration-200;
   }
 
   .select {
-    @apply input appearance-none cursor-pointer
-           bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%23414833%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.23%207.21a.75.75%200%20011.06.02L10%2011.168l3.71-3.938a.75.75%200%20111.08%201.04l-4.25%204.5a.75.75%200%2001-1.08%200l-4.25-4.5a.75.75%200%20010-1.06z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E')]
-           bg-[length:1.25rem_1.25rem] bg-[right_0.75rem_center] bg-no-repeat
-           pr-10;
+    @apply input appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%23414833%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.23%207.21a.75.75%200%20011.06.02L10%2011.168l3.71-3.938a.75.75%200%20111.08%201.04l-4.25%204.5a.75.75%200%2001-1.08%200l-4.25-4.5a.75.75%200%20010-1.06z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25rem_1.25rem] bg-[right_0.75rem_center] bg-no-repeat pr-10;
   }
 
   /* Checkbox Custom Styling */
   .checkbox {
-    @apply w-5 h-5 rounded border-2 border-dun-300
-           text-reseda focus:ring-reseda-400 cursor-pointer;
+    @apply w-5 h-5 rounded border-2 border-dun-300 text-reseda focus:ring-reseda-400 cursor-pointer;
   }
 
   /* Radio Custom Styling */
   .radio {
-    @apply w-5 h-5 border-2 border-dun-300
-           text-reseda focus:ring-reseda-400 cursor-pointer;
+    @apply w-5 h-5 border-2 border-dun-300 text-reseda focus:ring-reseda-400 cursor-pointer;
   }
 }
 
 @layer utilities {
+
   /* Text Balance for Headlines */
   .text-balance {
     text-wrap: balance;
@@ -140,16 +134,14 @@
   /* Premium Shadow */
   .shadow-premium {
     box-shadow: 0 4px 20px -2px rgba(65, 72, 51, 0.1),
-                0 2px 8px -2px rgba(65, 72, 51, 0.05);
+      0 2px 8px -2px rgba(65, 72, 51, 0.05);
   }
 
   /* Subtle Gradient Background */
   .bg-gradient-premium {
-    background: linear-gradient(
-      180deg,
-      var(--color-bone) 0%,
-      rgba(204, 191, 163, 0.3) 100%
-    );
+    background: linear-gradient(180deg,
+        var(--color-bone) 0%,
+        rgba(204, 191, 163, 0.3) 100%);
   }
 
   /* Image Overlay for Hero */

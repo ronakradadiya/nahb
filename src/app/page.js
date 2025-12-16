@@ -5,6 +5,7 @@
  */
 
 import { Hero, FeaturedPlans, Features, CallToAction } from "@/components/home";
+import { PremiumLots } from "@/components/shared";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,9 @@ export default function HomePage() {
 
       {/* Features/Benefits */}
       <Features />
+
+      {/* Premium Lots Pricing */}
+      <PremiumLots />
 
       {/* Call to Action */}
       <CallToAction />

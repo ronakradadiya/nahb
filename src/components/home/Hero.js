@@ -32,7 +32,7 @@ export function Hero({ className, ...props }) {
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-ebony leading-tight mb-6">
               Where Luxury Meets
-              <span className="block text-sage">Modern Living</span>
+              <span className="block text-umber">Modern Living</span>
             </h1>
 
             {/* Description */}
