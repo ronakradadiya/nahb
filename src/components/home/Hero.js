@@ -25,14 +25,14 @@ export function Hero({ className, ...props }) {
           {/* Left Column - Content */}
           <div>
             {/* Tagline */}
-            <p className="text-sage font-medium tracking-wide uppercase mb-4">
+            <p className="text-ebony font-medium tracking-wide mb-4">
               Welcome to {siteConfig.name}
             </p>
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium text-ebony leading-tight mb-6">
               Where Luxury Meets
-              <span className="block text-umber">Modern Living</span>
+              <span className="block text-ochre leading-[70px]">Modern Living</span>
             </h1>
 
             {/* Description */}
