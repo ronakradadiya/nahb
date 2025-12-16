@@ -7,6 +7,8 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
+import Image from "next/image";
+import LogoImage from "@/assets/logo.png";
 
 export function Logo({ className, ...props }) {
   return (
@@ -19,21 +21,13 @@ export function Logo({ className, ...props }) {
       {...props}
     >
       {/* Logo Icon */}
-      <div className="w-10 h-10 bg-reseda rounded flex items-center justify-center">
-        <svg
-          className="w-6 h-6 text-white"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M3 21V9L12 3L21 9V21H15V14H9V21H3Z"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+      <div className="rounded flex items-center justify-center">
+        <Image
+          src={LogoImage}
+          alt="Silverwood Heights"
+          className="object-contain max-w-[95px]"
+          priority
+        />
       </div>
 
       {/* Logo Text */}

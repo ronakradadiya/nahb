@@ -5,14 +5,14 @@
 
 export const teamConfig = {
   title: "Meet Our Team",
-  subtitle: "The dedicated professionals behind Silver Wood Heights",
+  subtitle: "The dedicated professionals behind Silverwood Heights",
 
   members: [
     {
       id: "john-doe",
       name: "John Doe",
       role: "Founder & CEO",
-      bio: "With over 25 years in residential construction, John founded Silver Wood Heights with a vision of building premium homes that families love.",
+      bio: "With over 25 years in residential construction, John founded Silverwood Heights with a vision of building premium homes that families love.",
       image: "/assets/team/john-doe.jpg",
     },
     {

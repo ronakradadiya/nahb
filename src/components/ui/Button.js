@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 // Button style variants - includes explicit hover text colors to override global anchor styles
 const variants = {
   primary: 
-    "bg-reseda text-white hover:bg-reseda-600 hover:text-white focus:ring-reseda-400",
+    "bg-sage text-white hover:bg-sage-500 hover:text-white focus:ring-sage-400",
   secondary: 
     "bg-dun text-ebony hover:bg-dun-300 hover:text-ebony focus:ring-dun-400",
   outline: 

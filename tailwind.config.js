@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       /**
-       * Brand Theme Colors - Silver Wood Heights
+       * Brand Theme Colors - Silverwood Heights
        * Premium, calm, architectural, luxury residential feel
        */
       colors: {

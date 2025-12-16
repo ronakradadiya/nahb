@@ -13,7 +13,7 @@ import { teamConfig } from "@/config/team";
 // Page metadata
 export const metadata = {
   title: "About Us",
-  description: "Learn about Silver Wood Heights - our story, values, and commitment to building quality homes for families.",
+  description: "Learn about Silverwood Heights - our story, values, and commitment to building quality homes for families.",
 };
 
 export default function AboutPage() {
@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={hero.image}
-            alt="Silver Wood Heights community"
+            alt="Silverwood Heights community"
             fill
             className="object-cover"
             priority

@@ -12,7 +12,7 @@ import { FloorPlansClient } from "./FloorPlansClient";
 // Page metadata
 export const metadata = {
   title: "Floor Plans",
-  description: "Explore our collection of thoughtfully designed floor plans. Find the perfect home layout for your family at Silver Wood Heights.",
+  description: "Explore our collection of thoughtfully designed floor plans. Find the perfect home layout for your family at Silverwood Heights.",
 };
 
 export default function FloorPlansPage() {

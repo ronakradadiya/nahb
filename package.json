@@ -1,7 +1,7 @@
 {
   "name": "silver-wood-heights",
   "version": "1.0.0",
-  "description": "Silver Wood Heights - NAHB Competition Website",
+  "description": "Silverwood Heights - NAHB Competition Website",
   "private": true,
   "scripts": {
     "dev": "next dev",

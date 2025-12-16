@@ -14,7 +14,7 @@ import { formatPrice } from "@/lib/formatters";
 // Page metadata
 export const metadata = {
   title: "Features & Options",
-  description: "Explore the standard features included in every Silver Wood Heights home, plus available upgrade packages to customize your dream home.",
+  description: "Explore the standard features included in every Silverwood Heights home, plus available upgrade packages to customize your dream home.",
 };
 
 export default function FeaturesOptionsPage() {
@@ -27,7 +27,7 @@ export default function FeaturesOptionsPage() {
             Features & Options
           </h1>
           <p className="text-lg text-ebony/70">
-            Every Silver Wood Heights home comes with exceptional standard features. 
+            Every Silverwood Heights home comes with exceptional standard features. 
             Elevate your home further with our curated upgrade packages.
           </p>
         </div>

@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: plan.name,
-    description: plan.description || `Explore the ${plan.name} floor plan at Silver Wood Heights. ${plan.sqft} sq ft, ${plan.beds} bedrooms, ${plan.baths} bathrooms.`,
+    description: plan.description || `Explore the ${plan.name} floor plan at Silverwood Heights. ${plan.sqft} sq ft, ${plan.beds} bedrooms, ${plan.baths} bathrooms.`,
   };
 }
 

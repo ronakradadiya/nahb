@@ -42,7 +42,7 @@ export function Features({ className, ...props }) {
   return (
     <Section background="dun" className={className} {...props}>
       <SectionHeading
-        title="Why Silver Wood Heights?"
+        title="Why Silverwood Heights?"
         subtitle="Every home is built with care, designed for comfort, and crafted to last."
       />
 

@@ -1,12 +1,12 @@
 /**
  * Standard Features Configuration
- * Features included in all homes at Silver Wood Heights
+ * Features included in all homes at Silverwood Heights
  */
 
 export const standardFeatures = {
   // Page Header
   title: "Standard Features",
-  subtitle: "Every Silver Wood Heights home includes these quality features",
+  subtitle: "Every Silverwood Heights home includes these quality features",
 
   // Feature Categories
   categories: [

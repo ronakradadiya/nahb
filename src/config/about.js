@@ -8,7 +8,7 @@ export const aboutConfig = {
   hero: {
     title: "Building Dreams, Creating Communities",
     subtitle:
-      "Silver Wood Heights represents our commitment to quality craftsmanship and timeless design.",
+      "Silverwood Heights represents our commitment to quality craftsmanship and timeless design.",
     image: "/assets/about/hero.jpg",
   },
 
@@ -16,8 +16,8 @@ export const aboutConfig = {
   story: {
     title: "Our Story",
     content: [
-      "Silver Wood Heights was born from a vision to create homes that blend architectural excellence with sustainable living. Our team of experienced builders, architects, and designers work together to deliver homes that exceed expectations.",
-      "Every detail matters at Silver Wood Heights. From the initial design phase to the final walkthrough, we maintain the highest standards of quality and craftsmanship. Our homes are not just structures—they are foundations for memories.",
+      "Silverwood Heights was born from a vision to create homes that blend architectural excellence with sustainable living. Our team of experienced builders, architects, and designers work together to deliver homes that exceed expectations.",
+      "Every detail matters at Silverwood Heights. From the initial design phase to the final walkthrough, we maintain the highest standards of quality and craftsmanship. Our homes are not just structures—they are foundations for memories.",
       "We believe that a home should reflect the unique personality of its owners while providing comfort, efficiency, and lasting value. That's why we offer customizable floor plans and premium upgrade options to make your dream home a reality.",
     ],
   },

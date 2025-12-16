@@ -4,10 +4,10 @@
  */
 
 export const siteConfig = {
-  name: "Silver Wood Heights",
+  name: "Silverwood Heights",
   tagline: "Luxury Single Family Homes",
   description:
-    "Discover premium single family homes at Silver Wood Heights. Thoughtfully designed floor plans with customizable upgrade options for modern living.",
+    "Discover premium single family homes at Silverwood Heights. Thoughtfully designed floor plans with customizable upgrade options for modern living.",
   url: "https://silverwoodheights.com",
   
   // Contact Information
@@ -15,7 +15,7 @@ export const siteConfig = {
     phone: "(555) 123-4567",
     email: "info@silverwoodheights.com",
     address: {
-      street: "123 Silver Wood Drive",
+      street: "123 Silverwood Drive",
       city: "Phoenix",
       state: "AZ",
       zip: "85001",
@@ -38,12 +38,12 @@ export const siteConfig = {
 
   // SEO Defaults
   seo: {
-    titleTemplate: "%s | Silver Wood Heights",
-    defaultTitle: "Silver Wood Heights | Luxury Single Family Homes",
+    titleTemplate: "%s | Silverwood Heights",
+    defaultTitle: "Silverwood Heights | Luxury Single Family Homes",
     openGraph: {
       type: "website",
       locale: "en_US",
-      siteName: "Silver Wood Heights",
+      siteName: "Silverwood Heights",
     },
   },
 };

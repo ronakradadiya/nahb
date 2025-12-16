@@ -23,7 +23,7 @@ export function Hero({ className, ...props }) {
       <div className="absolute inset-0 z-0">
         <Image
           src="/assets/hero/hero-main.jpg"
-          alt="Silver Wood Heights luxury home exterior"
+          alt="Silverwood Heights luxury home exterior"
           fill
           className="object-cover"
           priority
@@ -58,7 +58,12 @@ export function Hero({ className, ...props }) {
             <Button href="/floor-plans" size="lg">
               Explore Floor Plans
             </Button>
-            <Button href="/about" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-ebony">
+            <Button 
+              href="/about" 
+              variant="outline" 
+              size="lg" 
+              className="border-white text-white hover:bg-white hover:!text-ebony"
+            >
               Learn More
             </Button>
           </div>

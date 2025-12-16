@@ -38,7 +38,7 @@ export function CallToAction({ className, ...props }) {
           </h2>
           
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-            Schedule a tour of our model homes and discover the Silver Wood Heights 
+            Schedule a tour of our model homes and discover the Silverwood Heights 
             difference. Our team is ready to help you find the perfect floor plan.
           </p>
 
@@ -50,7 +50,7 @@ export function CallToAction({ className, ...props }) {
               href="/about" 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-ebony"
+              className="border-white text-white hover:bg-white hover:!text-ebony"
             >
               Contact Us
             </Button>
