@@ -12,6 +12,14 @@
 // ===========================================
 // LOT SIZES - Add new sizes here
 // ===========================================
+
+import HavenwoodExterior from "@/assets/plans/havenwood/exterior.png";
+import SterlingExterior from "@/assets/plans/sterling/exterior.png";
+import BrooksideExterior from "@/assets/plans/brookside/exterior.png";
+import KirkwoodExterior from "@/assets/plans/kirkwood/exterior.png";
+import IngramExterior from "@/assets/plans/ingram/exterior.png";
+import RiverbendExterior from "@/assets/plans/riverbend/exterior.png";
+
 export const lotSizes = [
   {
     id: "7500",
@@ -68,7 +76,7 @@ export const floorPlans = [
     // Images
     images: [
       {
-        src: "/assets/plans/havenwood/exterior.jpg",
+        src: HavenwoodExterior,
         alt: "HavenWood - Exterior View",
         type: "exterior",
       },
@@ -125,7 +133,7 @@ export const floorPlans = [
     
     images: [
       {
-        src: "/assets/plans/the-sterling/exterior.jpg",
+        src: SterlingExterior,
         alt: "The Sterling - Exterior View",
         type: "exterior",
       },
@@ -190,7 +198,7 @@ export const floorPlans = [
     
     images: [
       {
-        src: "/assets/plans/brookside/exterior.jpg",
+        src: BrooksideExterior,
         alt: "Brookside - Exterior View",
         type: "exterior",
       },
@@ -247,7 +255,7 @@ export const floorPlans = [
     
     images: [
       {
-        src: "/assets/plans/kirkwood/exterior.jpg",
+        src: KirkwoodExterior,
         alt: "Kirkwood - Exterior View",
         type: "exterior",
       },
@@ -304,7 +312,7 @@ export const floorPlans = [
     
     images: [
       {
-        src: "/assets/plans/ingram/exterior.jpg",
+        src: IngramExterior,
         alt: "Ingram - Exterior View",
         type: "exterior",
       },
@@ -361,7 +369,7 @@ export const floorPlans = [
     
     images: [
       {
-        src: "/assets/plans/the-riverbend/exterior.jpg",
+        src: RiverbendExterior,
         alt: "The Riverbend - Exterior View",
         type: "exterior",
       },
