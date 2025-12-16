@@ -21,7 +21,7 @@ export function Logo({ className, ...props }) {
       {...props}
     >
       {/* Logo Icon */}
-      <div className="rounded flex items-center justify-center">
+      <div className="flex items-center justify-center">
         <Image
           src={LogoImage}
           alt="Silverwood Heights"
@@ -31,14 +31,14 @@ export function Logo({ className, ...props }) {
       </div>
 
       {/* Logo Text */}
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <span className="font-display text-lg font-semibold text-ebony leading-tight group-hover:text-reseda transition-colors">
           {siteConfig.name}
         </span>
         <span className="text-xs text-ebony/60 tracking-wide uppercase">
           {siteConfig.tagline}
         </span>
-      </div>
+      </div> */}
     </Link>
   );
 }
