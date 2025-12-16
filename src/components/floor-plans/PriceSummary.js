@@ -97,7 +97,7 @@ export function PriceSummary({
       </div>
 
       {/* CTA */}
-      <div className="p-4 bg-dun/30">
+      {/* <div className="p-4 bg-dun/30">
         <button
           type="button"
           className="w-full btn-primary py-3"
@@ -110,7 +110,7 @@ export function PriceSummary({
         >
           Download Brochure
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

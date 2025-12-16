@@ -15,20 +15,14 @@
 export const lotSizes = [
   {
     id: "7500",
-    label: "7,500 sq ft Lot",
+    label: "Lot A - 7,500 sq ft",
     value: 7500,
   },
   {
     id: "9000",
-    label: "9,000 sq ft Lot",
+    label: "Lot B - 9,000 sq ft",
     value: 9000,
   },
-  // Add more lot sizes as needed:
-  // {
-  //   id: "10000",
-  //   label: "10,000 sq ft Lot",
-  //   value: 10000,
-  // },
 ];
 
 // ===========================================
@@ -36,366 +30,364 @@ export const lotSizes = [
 // ===========================================
 export const floorPlans = [
   // -----------------------------------------
-  // PLAN 1: The Aspen (WITH upgrade options)
+  // PLAN 1: HavenWood (Lot A - 7500)
   // -----------------------------------------
   {
-    id: "the-aspen",
-    name: "The Aspen",
-    ogName: "Model A-100",
-    slug: "the-aspen",
+    id: "havenwood",
+    name: "HavenWood",
+    ogName: null,
+    slug: "havenwood",
     
     // Lot & Sizing
     lotSize: 7500,
-    sqft: 2450,
-    houseWidth: "52 ft",
+    sqft: 2156,
+    houseWidth: "46'9\"",
     
     // Room Configuration
-    beds: 4,
-    baths: 3,
-    garage: 2,
-    hasLoft: true,
-    
-    // Pricing
-    basePrice: 425000,
-    
-    // Description
-    description:
-      "The Aspen offers an open-concept living space perfect for modern families. Featuring a spacious great room, gourmet kitchen with island, and a luxurious owner's suite on the main level.",
-    
-    // Features Highlights
-    highlights: [
-      "Open-concept great room",
-      "Gourmet kitchen with island",
-      "Main level owner's suite",
-      "Optional loft space",
-      "Covered patio",
-    ],
-    
-    // Images - Add/remove as needed
-    // First image is used as thumbnail
-    images: [
-      {
-        src: "/assets/plans/the-aspen/exterior.jpg",
-        alt: "The Aspen - Exterior View",
-        type: "exterior",
-      },
-      {
-        src: "/assets/plans/the-aspen/great-room.jpg",
-        alt: "The Aspen - Great Room",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-aspen/kitchen.jpg",
-        alt: "The Aspen - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-aspen/owners-suite.jpg",
-        alt: "The Aspen - Owner's Suite",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-aspen/floor-plan.jpg",
-        alt: "The Aspen - Floor Plan",
-        type: "floorplan",
-      },
-    ],
-    
-    // Upgrade Options (OPTIONAL - per plan)
-    // Omit this array entirely if plan has no upgrade options
-    upgradeOptions: [
-      {
-        id: "loft",
-        name: "Loft Addition",
-        description: "Convert bonus space to finished loft with bedroom and bath",
-        price: 18000,
-      },
-      {
-        id: "covered-patio-extension",
-        name: "Extended Covered Patio",
-        description: "Extend covered patio by 8 feet",
-        price: 8500,
-      },
-      {
-        id: "three-car-garage",
-        name: "3-Car Garage",
-        description: "Upgrade from 2-car to 3-car garage",
-        price: 22000,
-      },
-      {
-        id: "fireplace",
-        name: "Gas Fireplace",
-        description: "Add gas fireplace to great room",
-        price: 4500,
-      },
-    ],
-  },
-
-  // -----------------------------------------
-  // PLAN 2: The Birch (WITH upgrade options)
-  // -----------------------------------------
-  {
-    id: "the-birch",
-    name: "The Birch",
-    ogName: "Model B-200",
-    slug: "the-birch",
-    
-    lotSize: 7500,
-    sqft: 2100,
-    houseWidth: "48 ft",
-    
     beds: 3,
     baths: 2.5,
     garage: 2,
     hasLoft: false,
     
+    // Pricing
     basePrice: 385000,
     
+    // Description
     description:
-      "The Birch is a thoughtfully designed home that maximizes space efficiency. Perfect for growing families or those who love to entertain.",
+      "The HavenWood features a versatile flex room perfect for a home office or playroom. With an open layout and thoughtful design, this home adapts to your lifestyle.",
     
+    // Features Highlights
     highlights: [
-      "Efficient use of space",
-      "Large kitchen pantry",
-      "Upstairs laundry",
-      "Spa-inspired owner's bath",
-      "Flex room option",
+      "3 bedrooms plus flexible bonus room",
+      "Open-concept living and dining",
+      "Spacious kitchen with island",
+      "2-car garage with storage",
+      "Covered patio",
     ],
     
+    // Images
     images: [
       {
-        src: "/assets/plans/the-birch/exterior.jpg",
-        alt: "The Birch - Exterior View",
+        src: "/assets/plans/havenwood/exterior.jpg",
+        alt: "HavenWood - Exterior View",
         type: "exterior",
       },
       {
-        src: "/assets/plans/the-birch/living-room.jpg",
-        alt: "The Birch - Living Room",
+        src: "/assets/plans/havenwood/living-room.jpg",
+        alt: "HavenWood - Living Room",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-birch/kitchen.jpg",
-        alt: "The Birch - Kitchen",
+        src: "/assets/plans/havenwood/kitchen.jpg",
+        alt: "HavenWood - Kitchen",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-birch/floor-plan.jpg",
-        alt: "The Birch - Floor Plan",
+        src: "/assets/plans/havenwood/floor-plan.jpg",
+        alt: "HavenWood - Floor Plan",
         type: "floorplan",
       },
     ],
     
-    upgradeOptions: [
-      {
-        id: "sunroom",
-        name: "Sunroom Addition",
-        description: "Add a beautiful sunroom off the dining area",
-        price: 15000,
-      },
-      {
-        id: "gourmet-kitchen",
-        name: "Gourmet Kitchen Upgrade",
-        description: "Upgraded appliances and expanded island",
-        price: 12000,
-      },
-    ],
+    // NO upgradeOptions - no upgrades available for this plan
   },
 
   // -----------------------------------------
-  // PLAN 3: The Cedar (WITHOUT upgrade options)
+  // PLAN 2: The Sterling (Lot A - 7500) - WITH LOFT OPTION
   // -----------------------------------------
   {
-    id: "the-cedar",
-    name: "The Cedar",
-    ogName: "Model C-300",
-    slug: "the-cedar",
+    id: "the-sterling",
+    name: "The Sterling",
+    ogName: null,
+    slug: "the-sterling",
     
-    lotSize: 9000,
-    sqft: 3200,
-    houseWidth: "62 ft",
+    lotSize: 7500,
+    sqft: 2212,
+    houseWidth: "51'9\"",
     
-    beds: 5,
-    baths: 4,
-    garage: 3,
+    beds: 3,
+    baths: 2,
+    garage: 2,
     hasLoft: true,
     
-    basePrice: 575000,
+    basePrice: 395000,
     
     description:
-      "The Cedar is our flagship home, offering generous living spaces and premium finishes throughout. Ideal for large families who desire luxury and comfort.",
+      "The Sterling combines elegance with functionality. This well-appointed home offers generous living spaces and modern conveniences throughout.",
     
     highlights: [
-      "Grand two-story foyer",
-      "Chef's kitchen with butler's pantry",
-      "Main level guest suite",
-      "Upstairs game room",
-      "3-car tandem garage",
+      "Open floor plan design",
+      "Large owner's suite",
+      "Gourmet kitchen with pantry",
+      "Dedicated laundry room",
+      "Optional loft addition available",
     ],
     
     images: [
       {
-        src: "/assets/plans/the-cedar/exterior.jpg",
-        alt: "The Cedar - Exterior View",
+        src: "/assets/plans/the-sterling/exterior.jpg",
+        alt: "The Sterling - Exterior View",
         type: "exterior",
       },
       {
-        src: "/assets/plans/the-cedar/foyer.jpg",
-        alt: "The Cedar - Grand Foyer",
+        src: "/assets/plans/the-sterling/living-room.jpg",
+        alt: "The Sterling - Living Room",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-cedar/kitchen.jpg",
-        alt: "The Cedar - Chef's Kitchen",
+        src: "/assets/plans/the-sterling/kitchen.jpg",
+        alt: "The Sterling - Kitchen",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-cedar/game-room.jpg",
-        alt: "The Cedar - Game Room",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-cedar/floor-plan.jpg",
-        alt: "The Cedar - Floor Plan",
+        src: "/assets/plans/the-sterling/floor-plan.jpg",
+        alt: "The Sterling - Floor Plan",
         type: "floorplan",
       },
     ],
     
-    // NO upgradeOptions - this plan doesn't have any
+    // ONLY upgrade option: Loft
+    upgradeOptions: [
+      {
+        id: "loft",
+        name: "Loft Addition",
+        description: "Convert bonus space to finished loft with additional living area",
+        price: 18000,
+      },
+    ],
   },
 
   // -----------------------------------------
-  // PLAN 4: The Douglas (9000 lot, WITH options)
+  // PLAN 3: Brookside (Lot B - 9000)
   // -----------------------------------------
   {
-    id: "the-douglas",
-    name: "The Douglas",
-    ogName: "Model D-400",
-    slug: "the-douglas",
+    id: "brookside",
+    name: "Brookside",
+    ogName: null,
+    slug: "brookside",
     
     lotSize: 9000,
-    sqft: 2850,
-    houseWidth: "58 ft",
+    sqft: 2327,
+    houseWidth: "36'7\"",
     
     beds: 4,
-    baths: 3.5,
-    garage: 3,
+    baths: 2.5,
+    garage: 2,
     hasLoft: false,
     
-    basePrice: 525000,
+    basePrice: 445000,
     
     description:
-      "The Douglas combines elegance with functionality, featuring an impressive owner's suite, spacious secondary bedrooms, and a versatile flex space.",
+      "The Brookside offers a perfect balance of space and style. With four bedrooms and well-designed living areas, this home is ideal for growing families.",
     
     highlights: [
-      "Impressive owner's suite",
-      "Jack-and-Jill bathroom",
-      "Versatile flex space",
-      "Mud room with lockers",
+      "4 spacious bedrooms",
+      "Open-concept main level",
+      "Walk-in closets",
+      "Upstairs laundry",
+      "Private owner's suite",
+    ],
+    
+    images: [
+      {
+        src: "/assets/plans/brookside/exterior.jpg",
+        alt: "Brookside - Exterior View",
+        type: "exterior",
+      },
+      {
+        src: "/assets/plans/brookside/living-room.jpg",
+        alt: "Brookside - Living Room",
+        type: "interior",
+      },
+      {
+        src: "/assets/plans/brookside/kitchen.jpg",
+        alt: "Brookside - Kitchen",
+        type: "interior",
+      },
+      {
+        src: "/assets/plans/brookside/floor-plan.jpg",
+        alt: "Brookside - Floor Plan",
+        type: "floorplan",
+      },
+    ],
+    
+    // NO upgradeOptions - no upgrades available for this plan
+  },
+
+  // -----------------------------------------
+  // PLAN 4: Kirkwood (Lot B - 9000)
+  // -----------------------------------------
+  {
+    id: "kirkwood",
+    name: "Kirkwood",
+    ogName: null,
+    slug: "kirkwood",
+    
+    lotSize: 9000,
+    sqft: 2696,
+    houseWidth: "36'7\"",
+    
+    beds: 4,
+    baths: 2.5,
+    garage: 2,
+    hasLoft: false,
+    
+    basePrice: 485000,
+    
+    description:
+      "The Kirkwood delivers exceptional living space with thoughtful details throughout. This home offers room to grow with luxurious touches in every corner.",
+    
+    highlights: [
+      "Generous room sizes",
+      "Chef-inspired kitchen",
+      "Luxurious owner's bath",
+      "Flex space options",
       "Covered outdoor living",
     ],
     
     images: [
       {
-        src: "/assets/plans/the-douglas/exterior.jpg",
-        alt: "The Douglas - Exterior View",
+        src: "/assets/plans/kirkwood/exterior.jpg",
+        alt: "Kirkwood - Exterior View",
         type: "exterior",
       },
       {
-        src: "/assets/plans/the-douglas/owners-suite.jpg",
-        alt: "The Douglas - Owner's Suite",
+        src: "/assets/plans/kirkwood/living-room.jpg",
+        alt: "Kirkwood - Living Room",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-douglas/kitchen.jpg",
-        alt: "The Douglas - Kitchen",
+        src: "/assets/plans/kirkwood/kitchen.jpg",
+        alt: "Kirkwood - Kitchen",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-douglas/floor-plan.jpg",
-        alt: "The Douglas - Floor Plan",
+        src: "/assets/plans/kirkwood/floor-plan.jpg",
+        alt: "Kirkwood - Floor Plan",
         type: "floorplan",
       },
     ],
     
-    upgradeOptions: [
-      {
-        id: "outdoor-kitchen",
-        name: "Outdoor Kitchen",
-        description: "Built-in grill, refrigerator, and prep area",
-        price: 28000,
-      },
-      {
-        id: "pool-prep",
-        name: "Pool Preparation Package",
-        description: "Plumbing and electrical prep for future pool",
-        price: 7500,
-      },
-      {
-        id: "smart-home",
-        name: "Smart Home Package",
-        description: "Integrated smart home system with hub",
-        price: 9500,
-      },
-    ],
+    // NO upgradeOptions - no upgrades available for this plan
   },
 
   // -----------------------------------------
-  // PLAN 5: The Elm (7500 lot, minimal options)
+  // PLAN 5: Ingram (Lot B - 9000)
   // -----------------------------------------
   {
-    id: "the-elm",
-    name: "The Elm",
-    ogName: "Model E-500",
-    slug: "the-elm",
+    id: "ingram",
+    name: "Ingram",
+    ogName: null,
+    slug: "ingram",
     
-    lotSize: 7500,
-    sqft: 1850,
-    houseWidth: "44 ft",
+    lotSize: 9000,
+    sqft: 2705,
+    houseWidth: "47'5\"",
     
-    beds: 3,
-    baths: 2,
+    beds: 5,
+    baths: 2.5,
     garage: 2,
     hasLoft: false,
     
-    basePrice: 345000,
+    basePrice: 495000,
     
     description:
-      "The Elm is an elegant starter home that doesn't compromise on style. Smart design choices create a spacious feel throughout.",
+      "The Ingram offers maximum flexibility with five bedrooms. Whether you need home offices, guest rooms, or space for a large family, this home delivers.",
     
     highlights: [
-      "Smart space utilization",
-      "Open kitchen/dining",
-      "Private owner's retreat",
-      "Low-maintenance living",
-      "Energy-efficient design",
+      "5 bedrooms for ultimate flexibility",
+      "Large great room",
+      "Gourmet kitchen with butler's pantry",
+      "Dual walk-in closets in owner's suite",
+      "Main level guest suite option",
     ],
     
     images: [
       {
-        src: "/assets/plans/the-elm/exterior.jpg",
-        alt: "The Elm - Exterior View",
+        src: "/assets/plans/ingram/exterior.jpg",
+        alt: "Ingram - Exterior View",
         type: "exterior",
       },
       {
-        src: "/assets/plans/the-elm/interior.jpg",
-        alt: "The Elm - Interior",
+        src: "/assets/plans/ingram/living-room.jpg",
+        alt: "Ingram - Living Room",
         type: "interior",
       },
       {
-        src: "/assets/plans/the-elm/floor-plan.jpg",
-        alt: "The Elm - Floor Plan",
+        src: "/assets/plans/ingram/kitchen.jpg",
+        alt: "Ingram - Kitchen",
+        type: "interior",
+      },
+      {
+        src: "/assets/plans/ingram/floor-plan.jpg",
+        alt: "Ingram - Floor Plan",
         type: "floorplan",
       },
     ],
     
-    upgradeOptions: [
+    // NO upgradeOptions - no upgrades available for this plan
+  },
+
+  // -----------------------------------------
+  // PLAN 6: The Riverbend (Lot B - 9000)
+  // -----------------------------------------
+  {
+    id: "the-riverbend",
+    name: "The Riverbend",
+    ogName: null,
+    slug: "the-riverbend",
+    
+    lotSize: 9000,
+    sqft: 2924,
+    houseWidth: "47'",
+    
+    beds: 4,
+    baths: 2.5,
+    garage: 2,
+    hasLoft: false,
+    
+    basePrice: 525000,
+    
+    description:
+      "The Riverbend is our premier home offering expansive living spaces and premium finishes. This home showcases the best of modern design and timeless elegance.",
+    
+    highlights: [
+      "Nearly 3,000 sq ft of living space",
+      "Impressive great room with high ceilings",
+      "Gourmet kitchen with island",
+      "Spa-inspired owner's suite",
+      "Generous outdoor living space",
+    ],
+    
+    images: [
       {
-        id: "solar-ready",
-        name: "Solar Ready Package",
-        description: "Pre-wiring and roof prep for solar panels",
-        price: 3500,
+        src: "/assets/plans/the-riverbend/exterior.jpg",
+        alt: "The Riverbend - Exterior View",
+        type: "exterior",
+      },
+      {
+        src: "/assets/plans/the-riverbend/living-room.jpg",
+        alt: "The Riverbend - Living Room",
+        type: "interior",
+      },
+      {
+        src: "/assets/plans/the-riverbend/kitchen.jpg",
+        alt: "The Riverbend - Kitchen",
+        type: "interior",
+      },
+      {
+        src: "/assets/plans/the-riverbend/owners-suite.jpg",
+        alt: "The Riverbend - Owner's Suite",
+        type: "interior",
+      },
+      {
+        src: "/assets/plans/the-riverbend/floor-plan.jpg",
+        alt: "The Riverbend - Floor Plan",
+        type: "floorplan",
       },
     ],
+    
+    // NO upgradeOptions - no upgrades available for this plan
   },
 ];
 
