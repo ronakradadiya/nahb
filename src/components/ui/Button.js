@@ -8,16 +8,16 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-// Button style variants
+// Button style variants - includes explicit hover text colors to override global anchor styles
 const variants = {
   primary: 
-    "bg-reseda text-white hover:bg-reseda-600 focus:ring-reseda-400",
+    "bg-reseda text-white hover:bg-reseda-600 hover:text-white focus:ring-reseda-400",
   secondary: 
-    "bg-dun text-ebony hover:bg-dun-300 focus:ring-dun-400",
+    "bg-dun text-ebony hover:bg-dun-300 hover:text-ebony focus:ring-dun-400",
   outline: 
     "border-2 border-reseda text-reseda hover:bg-reseda hover:text-white focus:ring-reseda-400",
   ghost: 
-    "text-reseda hover:bg-reseda/10 focus:ring-reseda-400",
+    "text-reseda hover:bg-reseda/10 hover:text-reseda focus:ring-reseda-400",
 };
 
 // Button sizes
