@@ -1,0 +1,48 @@
+[
+  {
+    "id": "silver",
+    "name": "Silver Package",
+    "tier": "Silver",
+    "price": 25000,
+    "description": "Essential upgrades for comfortable modern living",
+    "items": [
+      "Standard Overlay Stained Cabinets",
+      "Level 1 Granite Counters (3cm) + 4\" Stone Splash",
+      "LVP Flooring",
+      "GE® Stainless Gas Range Appliance",
+      "Standard baseboard trim"
+    ]
+  },
+  {
+    "id": "gold",
+    "name": "Gold Package",
+    "tier": "Gold",
+    "price": 40000,
+    "description": "Premium finishes for elevated everyday living",
+    "items": [
+      "Painted Shaker Cabinets + Soft Close Doors",
+      "Level 1 Quartz Counters + Subway Tile Backsplash",
+      "LVP Flooring through Great Room and Hallways",
+      "GE® Profile™ Slide-in Gas Range + Convection",
+      "Crown Molding Trim in Foyer, Dining, and Owner's Suite"
+    ]
+  },
+  {
+    "id": "platinum",
+    "name": "Platinum Package",
+    "tier": "Platinum",
+    "price": 65000,
+    "description": "Luxury appointments for discerning homeowners",
+    "items": [
+      "Stacked Upper Cabinets with Glass Inserts",
+      "Under-cabinet Lighting + Trash Pull-out",
+      "Premium Quartz Counters + Waterfall Island Edge",
+      "Engineered Hardwood Flooring on Main Level",
+      "Upgraded Carpet Pad in Bedrooms",
+      "Free-standing Soaking Tub",
+      "Rainhead Shower + Frameless Glass Enclosure",
+      "Whole-home Audio Pre-wire",
+      "EV Charging Outlet (NEMA 14-50) in Garage"
+    ]
+  }
+]
