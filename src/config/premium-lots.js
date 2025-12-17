@@ -7,7 +7,7 @@ export const premiumLots = [
   {
     id: "river-front",
     name: "River Front",
-    color: "#9333EA", // Purple
+    color: "#87246C", // Purple
     quantity: 15,
     price: 40000,
     description: "Premium lots with direct river frontage and scenic water views",
@@ -15,7 +15,7 @@ export const premiumLots = [
   {
     id: "amenity",
     name: "Amenity",
-    color: "#F59E0B", // Orange
+    color: "#CF8D3E", // Orange
     quantity: 36,
     price: 15000,
     description: "Lots adjacent to community amenities including parks and trails",
@@ -23,7 +23,7 @@ export const premiumLots = [
   {
     id: "pond-front",
     name: "Pond Front",
-    color: "#06B6D4", // Cyan
+    color: "#42CDC9", // Cyan
     quantity: 21,
     price: 20000,
     description: "Serene lots overlooking our private community pond",
