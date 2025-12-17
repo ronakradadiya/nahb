@@ -166,7 +166,7 @@ export const floorPlans = [
   },
 
   // -----------------------------------------
-  // PLAN 3: Brookside (Lot B - 9000)
+  // PLAN 3: Brookside (Lot B - 7500)
   // -----------------------------------------
   {
     id: "brookside",
@@ -174,7 +174,7 @@ export const floorPlans = [
     ogName: null,
     slug: "brookside",
     
-    lotSize: 9000,
+    lotSize: 7500,
     sqft: 2327,
     houseWidth: "36'7\"",
     
