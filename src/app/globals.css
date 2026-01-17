@@ -154,3 +154,81 @@
     @apply absolute inset-0 bg-ebony/30;
   }
 }
+
+/* Animated border color shift for highlighted nav link */
+.nav-highlight {
+  position: relative;
+  background: #414833;
+  border: 2px solid #5B9A8B;
+  border-radius: 8px;
+  animation: border-shift 1.5s ease-in-out infinite;
+}
+
+@keyframes border-shift {
+  0%, 100% {
+    border-color: #5B9A8B;
+    box-shadow: 0 0 10px rgba(91, 154, 139, 0.4);
+  }
+  50% {
+    border-color: #93C5B8;
+    box-shadow: 0 0 15px rgba(147, 197, 184, 0.5);
+  }
+}
+
+.nav-highlight,
+.nav-highlight:hover {
+  color: #ffffff !important;
+}
+
+.nav-highlight:hover {
+  animation: none;
+  border-color: #93C5B8;
+  background: #737A5D;
+  box-shadow: 0 0 20px rgba(91, 154, 139, 0.5);
+}
+
+/* Mobile Menu */
+.menu-overlay {
+  background-color: rgba(65, 72, 51, 0.5);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: rgba(65, 72, 51, 0);
+  }
+  to {
+    background-color: rgba(65, 72, 51, 0.5);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    background-color: rgba(65, 72, 51, 0.5);
+  }
+  to {
+    background-color: rgba(65, 72, 51, 0);
+  }
+}
+
+.menu-panel {
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
