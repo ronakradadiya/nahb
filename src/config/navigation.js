@@ -24,6 +24,13 @@ export const mainNavigation = [
     label: "Features & Options",
     href: "/features-options",
   },
+  {
+    id: "internal-dashboard",
+    label: "Internal Dashboard",
+    href: "https://dashboard-silverwood-heights.vercel.app/",
+    isExternal: true,
+    isHighlighted: true,
+  },
 ];
 
 export const footerNavigation = {
