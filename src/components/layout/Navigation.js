@@ -113,27 +113,18 @@ export function Navigation() {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div
-          className={cn(
-            "fixed inset-0 z-50 md:hidden pointer-events-none",
-            mobileMenuOpen && "pointer-events-auto",
-          )}
-        >
-          {/* Backdrop */}
-          <div
-            className={cn(
-              "menu-backdrop absolute inset-0 bg-ebony/50",
-              mobileMenuOpen && "open",
-            )}
+        <div className="fixed inset-0 z-50 md:hidden">
+          {/* Backdrop - MUST be clicked to close */}
+          <div 
+            className="absolute inset-0 bg-ebony/50"
+            style={{ animation: 'fadeIn 0.3s ease-in-out' }}
             onClick={() => setMobileMenuOpen(false)}
           />
-
-          {/* Menu Panel */}
-          <div
-            className={cn(
-              "menu-panel absolute top-0 right-0 w-full h-full bg-bone shadow-xl flex flex-col",
-              mobileMenuOpen && "open",
-            )}
+          
+          {/* Menu Panel - positioned above backdrop */}
+          <div 
+            className="relative top-0 left-0 right-0 w-full bg-bone shadow-lg flex flex-col max-h-[80vh] overflow-y-auto"
+            style={{ animation: 'slideDown 0.3s ease-in-out' }}
           >
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-dun-200 bg-bone">
