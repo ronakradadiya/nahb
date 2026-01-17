@@ -17,9 +17,18 @@ import { useLockBodyScroll } from "@/hooks";
 export function Navigation() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   // Lock body scroll when mobile menu is open
   useLockBodyScroll(mobileMenuOpen);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setMobileMenuOpen(false);
+      setIsClosing(false);
+    }, 300); // Match animation duration
+  };
 
   return (
     <>
@@ -117,14 +126,18 @@ export function Navigation() {
           {/* Backdrop - MUST be clicked to close */}
           <div 
             className="absolute inset-0 bg-ebony/50"
-            style={{ animation: 'fadeIn 0.3s ease-in-out' }}
-            onClick={() => setMobileMenuOpen(false)}
+            style={{ 
+              animation: isClosing ? 'fadeOut 0.3s ease-in-out' : 'fadeIn 0.3s ease-in-out' 
+            }}
+            onClick={handleClose}
           />
           
           {/* Menu Panel - positioned above backdrop */}
           <div 
             className="relative top-0 left-0 right-0 w-full bg-bone shadow-lg flex flex-col max-h-[80vh] overflow-y-auto"
-            style={{ animation: 'slideDown 0.3s ease-in-out' }}
+            style={{ 
+              animation: isClosing ? 'slideUp 0.3s ease-in-out' : 'slideDown 0.3s ease-in-out' 
+            }}
           >
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-dun-200 bg-bone">
@@ -134,7 +147,7 @@ export function Navigation() {
               <button
                 type="button"
                 className="p-2 text-ebony hover:text-reseda transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleClose}
                 aria-label="Close menu"
               >
                 <Icon name="close" size={24} />
@@ -156,7 +169,7 @@ export function Navigation() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="nav-highlight flex items-center justify-between gap-2 px-5 py-3.5 text-white font-medium transition-all duration-300"
-                          onClick={() => setMobileMenuOpen(false)}
+                          onClick={handleClose}
                         >
                           <span className="flex items-center gap-2">
                             <svg
@@ -206,7 +219,7 @@ export function Navigation() {
                             "hover:bg-reseda transition-colors duration-200",
                             "ring-2 ring-sage ring-offset-2",
                           )}
-                          onClick={() => setMobileMenuOpen(false)}
+                          onClick={handleClose}
                         >
                           {item.label}
                         </a>
@@ -226,7 +239,7 @@ export function Navigation() {
                             ? "bg-reseda text-white"
                             : "text-ebony hover:bg-dun-200",
                         )}
-                        onClick={() => setMobileMenuOpen(false)}
+                        onClick={handleClose}
                       >
                         {item.label}
                       </Link>

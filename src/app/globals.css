@@ -202,6 +202,15 @@
   }
 }
 
+@keyframes fadeOut {
+  from {
+    background-color: rgba(65, 72, 51, 0.5);
+  }
+  to {
+    background-color: rgba(65, 72, 51, 0);
+  }
+}
+
 .menu-panel {
   animation: slideDown 0.3s ease-in-out;
 }
@@ -212,5 +221,14 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
   }
 }
