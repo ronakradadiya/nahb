@@ -1,13 +1,8 @@
-/**
- * PremiumLots Component
- * 
- * Displays premium lot pricing information
- */
-
-import { cn } from "@/lib/utils";
+import Image from "next/image";
 import { Section, SectionHeading } from "@/components/shared";
 import { formatPrice } from "@/lib/formatters";
 import { premiumLots } from "@/config/premium-lots";
+import premiumsImage from "@/assets/site-plans/premiums.png";
 
 export function PremiumLots({ className, showDescription = false, ...props }) {
   return (
@@ -17,54 +12,67 @@ export function PremiumLots({ className, showDescription = false, ...props }) {
         subtitle="Select lots are available with premium features and locations"
       />
 
-      <div className="max-w-4xl mx-auto">
-        {/* Desktop Table */}
-        <div className="hidden md:block overflow-hidden rounded-lg border border-dun-200">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-dun text-ebony">
-                <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wide">
-                  Color
-                </th>
-                <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wide">
-                  Premiums
-                </th>
-                <th className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wide">
-                  Quantity
-                </th>
-                <th className="px-6 py-4 text-right text-sm font-semibold uppercase tracking-wide">
-                  Pricing
-                </th>
-              </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-dun-200">
-              {premiumLots.map((lot) => (
-                <tr key={lot.id} className="hover:bg-bone/50 transition-colors">
-                  <td className="px-6 py-4">
-                    <div
-                      className="w-8 h-8 rounded-full border-2 border-gray-300"
-                      style={{ backgroundColor: lot.color }}
-                      aria-label={`${lot.name} color indicator`}
-                    />
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className="font-semibold text-ebony">{lot.name}</span>
-                    {showDescription && (
-                      <p className="text-sm text-ebony/60 mt-1">
-                        {lot.description}
-                      </p>
-                    )}
-                  </td>
-                  <td className="px-6 py-4 text-center text-ebony">
-                    {lot.quantity}
-                  </td>
-                  <td className="px-6 py-4 text-right font-semibold text-reseda text-lg">
-                    {formatPrice(lot.price)}
-                  </td>
+      <div className="max-w-7xl mx-auto">
+        {/* Desktop Layout: Image and Table side by side */}
+        <div className="hidden md:grid md:grid-cols-2 gap-8 items-start">
+          {/* Image */}
+          <div className="relative rounded-lg overflow-hidden border border-dun-200 bg-white">
+            <Image
+              src={premiumsImage}
+              alt="Premium lot site plan"
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+
+          {/* Table */}
+          <div className="overflow-hidden rounded-lg border border-dun-200">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-dun text-ebony">
+                  <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wide">
+                    Color
+                  </th>
+                  <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wide">
+                    Premiums
+                  </th>
+                  <th className="px-6 py-4 text-center text-sm font-semibold uppercase tracking-wide">
+                    Quantity
+                  </th>
+                  <th className="px-6 py-4 text-right text-sm font-semibold uppercase tracking-wide">
+                    Pricing
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody className="bg-white divide-y divide-dun-200">
+                {premiumLots.map((lot) => (
+                  <tr key={lot.id} className="hover:bg-bone/50 transition-colors">
+                    <td className="px-6 py-4">
+                      <div
+                        className="w-8 h-8 rounded-full border-2 border-gray-300"
+                        style={{ backgroundColor: lot.color }}
+                        aria-label={`${lot.name} color indicator`}
+                      />
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className="font-semibold text-ebony">{lot.name}</span>
+                      {showDescription && (
+                        <p className="text-sm text-ebony/60 mt-1">
+                          {lot.description}
+                        </p>
+                      )}
+                    </td>
+                    <td className="px-6 py-4 text-center text-ebony">
+                      {lot.quantity}
+                    </td>
+                    <td className="px-6 py-4 text-right font-semibold text-reseda text-lg">
+                      {formatPrice(lot.price)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Mobile Cards */}
