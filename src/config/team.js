@@ -54,7 +54,7 @@ export const teamConfig = {
     {
       id: "alexander-montes",
       name: "Alexander Montes",
-      role: "VP",
+      role: "VP of Project Management",
       image: ImageAlexander,
     },
     {

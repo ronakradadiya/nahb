@@ -4,7 +4,7 @@
  * Landing page featuring hero, featured plans, and CTAs
  */
 
-import { Hero, FeaturedPlans, Features, CallToAction } from "@/components/home";
+import { Hero, MasterPlan, FeaturedPlans, Features, CallToAction } from "@/components/home";
 import { PremiumLots } from "@/components/shared";
 
 export default function HomePage() {
@@ -12,6 +12,9 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <Hero />
+
+      {/* Master Plan Section */}
+      <MasterPlan />
 
       {/* Featured Floor Plans */}
       <FeaturedPlans />

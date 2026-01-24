@@ -13,6 +13,18 @@ export function PremiumLots({ className, showDescription = false, ...props }) {
       />
 
       <div className="max-w-7xl mx-auto">
+        {/* Mobile Image - Shows above cards */}
+        <div className="md:hidden mb-6">
+          <div className="relative rounded-lg overflow-hidden border border-dun-200 bg-white">
+            <Image
+              src={premiumsImage}
+              alt="Premium lot site plan"
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+        </div>
+
         {/* Desktop Layout: Image and Table side by side */}
         <div className="hidden md:grid md:grid-cols-2 gap-8 items-start">
           {/* Image */}
