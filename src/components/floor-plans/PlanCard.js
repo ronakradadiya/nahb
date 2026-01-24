@@ -42,13 +42,13 @@ export function PlanCard({ plan, className, ...props }) {
       {...props}
     >
       {/* Image Container */}
-      <div className="relative aspect-[4/3] bg-dun-100 overflow-hidden">
+      <div className="relative h-52 bg-dun-100 overflow-hidden">
         {thumbnail ? (
           <Image
             src={thumbnail.src}
             alt={thumbnail.alt || `${name} exterior`}
             fill
-            className="transition-transform duration-500 group-hover:scale-105"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
