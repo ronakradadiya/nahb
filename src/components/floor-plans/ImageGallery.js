@@ -35,6 +35,7 @@ export function ImageGallery({ images = [], planName = "", className, ...props }
           className="object-cover"
           sizes="(max-width: 1024px) 100vw, 60vw"
           priority={activeIndex === 0}
+          quality={95}
         />
 
         {/* Image Type Badge */}
