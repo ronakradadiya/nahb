@@ -8,6 +8,7 @@ export { PlanGrid } from "./PlanGrid";
 export { LotSizeFilter } from "./LotSizeFilter";
 export { PlanOverview } from "./PlanOverview";
 export { ImageGallery } from "./ImageGallery";
+export { FloorPlanViewer } from "./FloorPlanViewer";
 export { UpgradeOptions } from "./UpgradeOptions";
 export { UpgradePackages } from "./UpgradePackages";
 export { PriceSummary } from "./PriceSummary";

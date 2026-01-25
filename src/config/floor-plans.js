@@ -15,25 +15,35 @@
 
 import HavenwoodExterior from "@/assets/plans/havenwood/exterior.png";
 import HavenwoodElevation1 from "@/assets/plans/havenwood/elevation-1.png";
+import HavenwoodFloorPlan from "@/assets/plans/havenwood/floor-plan.jpeg";
 
 import SterlingExterior from "@/assets/plans/sterling/exterior.png";
 import SterlingElevation1 from "@/assets/plans/sterling/elevation-1.png";
 import SterlingElevation2 from "@/assets/plans/sterling/elevation-2.png";
+import SterlingFloorPlan from "@/assets/plans/sterling/floor-plan.png";
+import SterlingFloorPlanLoft from "@/assets/plans/sterling/floor-plan-loft.png";
 
 import BrooksideExterior from "@/assets/plans/brookside/exterior.png";
 import BrooksideElevation1 from "@/assets/plans/brookside/elevation-1.png";
+import BrooksideFloorPlan from "@/assets/plans/brookside/floor-plan.png";
 
 import KirkwoodExterior from "@/assets/plans/kirkwood/exterior.png";
 import KirkwoodElevation1 from "@/assets/plans/kirkwood/elevation-1.png";
 import KirkwoodElevation2 from "@/assets/plans/kirkwood/elevation-2.png";
+import KirkwoodFloorPlanFloor1 from "@/assets/plans/kirkwood/floor-plan-floor-1.png";
+import KirkwoodFloorPlanFloor2 from "@/assets/plans/kirkwood/floor-plan-floor-2.png";
 
 import IngramExterior from "@/assets/plans/ingram/exterior.png";
 import IngramElevation1 from "@/assets/plans/ingram/elevation-1.png";
 import IngramElevation2 from "@/assets/plans/ingram/elevation-2.png";
+import IngramFloorPlanFloor1 from "@/assets/plans/ingram/floor-plan-floor-1.png";
+import IngramFloorPlanFloor2 from "@/assets/plans/ingram/floor-plan-floor-2.png";
 
 import RiverbendExterior from "@/assets/plans/riverbend/exterior.png";
 import RiverbendElevation1 from "@/assets/plans/riverbend/elevation-1.png";
 import RiverbendElevation2 from "@/assets/plans/riverbend/elevation-2.png";
+import RiverbendFloorPlanFloor1 from "@/assets/plans/riverbend/floor-plan-floor-1.png";
+import RiverbendFloorPlanFloor2 from "@/assets/plans/riverbend/floor-plan-floor-2.png";
 
 export const lotSizes = [
   {
@@ -102,6 +112,15 @@ export const floorPlans = [
       },
     ],
     
+    // Floor Plans
+    floorPlans: [
+      {
+        src: HavenwoodFloorPlan,
+        alt: "HavenWood - Floor Plan",
+        label: "Main Floor",
+      },
+    ],
+    
     // NO upgradeOptions - no upgrades available for this plan
   },
 
@@ -151,6 +170,20 @@ export const floorPlans = [
         src: SterlingElevation2,
         alt: "The Sterling - Elevation 2",
         type: "elevation",
+      },
+    ],
+    
+    // Floor Plans
+    floorPlans: [
+      {
+        src: SterlingFloorPlan,
+        alt: "The Sterling - Floor Plan",
+        label: "Main Floor",
+      },
+      {
+        src: SterlingFloorPlanLoft,
+        alt: "The Sterling - Loft Floor Plan",
+        label: "Loft (Optional)",
       },
     ],
     
@@ -209,6 +242,15 @@ export const floorPlans = [
       },
     ],
     
+    // Floor Plans
+    floorPlans: [
+      {
+        src: BrooksideFloorPlan,
+        alt: "Brookside - Floor Plan",
+        label: "Main Floor",
+      },
+    ],
+    
     // NO upgradeOptions - no upgrades available for this plan
   },
 
@@ -258,6 +300,20 @@ export const floorPlans = [
         src: KirkwoodElevation2,
         alt: "Kirkwood - Elevation 2",
         type: "elevation",
+      },
+    ],
+    
+    // Floor Plans
+    floorPlans: [
+      {
+        src: KirkwoodFloorPlanFloor1,
+        alt: "Kirkwood - Floor 1 Plan",
+        label: "Floor 1",
+      },
+      {
+        src: KirkwoodFloorPlanFloor2,
+        alt: "Kirkwood - Floor 2 Plan",
+        label: "Floor 2",
       },
     ],
     
@@ -313,6 +369,20 @@ export const floorPlans = [
       },
     ],
     
+    // Floor Plans
+    floorPlans: [
+      {
+        src: IngramFloorPlanFloor1,
+        alt: "Ingram - Floor 1 Plan",
+        label: "Floor 1",
+      },
+      {
+        src: IngramFloorPlanFloor2,
+        alt: "Ingram - Floor 2 Plan",
+        label: "Floor 2",
+      },
+    ],
+    
     // NO upgradeOptions - no upgrades available for this plan
   },
 
@@ -362,6 +432,20 @@ export const floorPlans = [
         src: RiverbendElevation2,
         alt: "The Riverbend - Elevation 2",
         type: "elevation",
+      },
+    ],
+    
+    // Floor Plans
+    floorPlans: [
+      {
+        src: RiverbendFloorPlanFloor1,
+        alt: "The Riverbend - Floor 1 Plan",
+        label: "Floor 1",
+      },
+      {
+        src: RiverbendFloorPlanFloor2,
+        alt: "The Riverbend - Floor 2 Plan",
+        label: "Floor 2",
       },
     ],
     
