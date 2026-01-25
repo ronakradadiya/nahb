@@ -14,11 +14,26 @@
 // ===========================================
 
 import HavenwoodExterior from "@/assets/plans/havenwood/exterior.png";
+import HavenwoodElevation1 from "@/assets/plans/havenwood/elevation-1.png";
+
 import SterlingExterior from "@/assets/plans/sterling/exterior.png";
+import SterlingElevation1 from "@/assets/plans/sterling/elevation-1.png";
+import SterlingElevation2 from "@/assets/plans/sterling/elevation-2.png";
+
 import BrooksideExterior from "@/assets/plans/brookside/exterior.png";
+import BrooksideElevation1 from "@/assets/plans/brookside/elevation-1.png";
+
 import KirkwoodExterior from "@/assets/plans/kirkwood/exterior.png";
+import KirkwoodElevation1 from "@/assets/plans/kirkwood/elevation-1.png";
+import KirkwoodElevation2 from "@/assets/plans/kirkwood/elevation-2.png";
+
 import IngramExterior from "@/assets/plans/ingram/exterior.png";
+import IngramElevation1 from "@/assets/plans/ingram/elevation-1.png";
+import IngramElevation2 from "@/assets/plans/ingram/elevation-2.png";
+
 import RiverbendExterior from "@/assets/plans/riverbend/exterior.png";
+import RiverbendElevation1 from "@/assets/plans/riverbend/elevation-1.png";
+import RiverbendElevation2 from "@/assets/plans/riverbend/elevation-2.png";
 
 export const lotSizes = [
   {
@@ -77,23 +92,13 @@ export const floorPlans = [
     images: [
       {
         src: HavenwoodExterior,
-        alt: "HavenWood - Exterior View",
-        type: "exterior",
+        alt: "HavenWood - Elevation",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/havenwood/living-room.jpg",
-        alt: "HavenWood - Living Room",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/havenwood/kitchen.jpg",
-        alt: "HavenWood - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/havenwood/floor-plan.jpg",
-        alt: "HavenWood - Floor Plan",
-        type: "floorplan",
+        src: HavenwoodElevation1,
+        alt: "HavenWood - Elevation 1",
+        type: "elevation",
       },
     ],
     
@@ -134,23 +139,18 @@ export const floorPlans = [
     images: [
       {
         src: SterlingExterior,
-        alt: "The Sterling - Exterior View",
-        type: "exterior",
+        alt: "The Sterling - Elevation",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/the-sterling/living-room.jpg",
-        alt: "The Sterling - Living Room",
-        type: "interior",
+        src: SterlingElevation1,
+        alt: "The Sterling - Elevation 1",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/the-sterling/kitchen.jpg",
-        alt: "The Sterling - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-sterling/floor-plan.jpg",
-        alt: "The Sterling - Floor Plan",
-        type: "floorplan",
+        src: SterlingElevation2,
+        alt: "The Sterling - Elevation 2",
+        type: "elevation",
       },
     ],
     
@@ -199,23 +199,13 @@ export const floorPlans = [
     images: [
       {
         src: BrooksideExterior,
-        alt: "Brookside - Exterior View",
-        type: "exterior",
+        alt: "Brookside - Elevation",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/brookside/living-room.jpg",
-        alt: "Brookside - Living Room",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/brookside/kitchen.jpg",
-        alt: "Brookside - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/brookside/floor-plan.jpg",
-        alt: "Brookside - Floor Plan",
-        type: "floorplan",
+        src: BrooksideElevation1,
+        alt: "Brookside - Elevation 1",
+        type: "elevation",
       },
     ],
     
@@ -256,23 +246,18 @@ export const floorPlans = [
     images: [
       {
         src: KirkwoodExterior,
-        alt: "Kirkwood - Exterior View",
-        type: "exterior",
+        alt: "Kirkwood - Elevation",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/kirkwood/living-room.jpg",
-        alt: "Kirkwood - Living Room",
-        type: "interior",
+        src: KirkwoodElevation1,
+        alt: "Kirkwood - Elevation 1",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/kirkwood/kitchen.jpg",
-        alt: "Kirkwood - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/kirkwood/floor-plan.jpg",
-        alt: "Kirkwood - Floor Plan",
-        type: "floorplan",
+        src: KirkwoodElevation2,
+        alt: "Kirkwood - Elevation 2",
+        type: "elevation",
       },
     ],
     
@@ -313,23 +298,18 @@ export const floorPlans = [
     images: [
       {
         src: IngramExterior,
-        alt: "Ingram - Exterior View",
-        type: "exterior",
+        alt: "Ingram - Elevation",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/ingram/living-room.jpg",
-        alt: "Ingram - Living Room",
-        type: "interior",
+        src: IngramElevation1,
+        alt: "Ingram - Elevation 1",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/ingram/kitchen.jpg",
-        alt: "Ingram - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/ingram/floor-plan.jpg",
-        alt: "Ingram - Floor Plan",
-        type: "floorplan",
+        src: IngramElevation2,
+        alt: "Ingram - Elevation 2",
+        type: "elevation",
       },
     ],
     
@@ -370,28 +350,18 @@ export const floorPlans = [
     images: [
       {
         src: RiverbendExterior,
-        alt: "The Riverbend - Exterior View",
-        type: "exterior",
+        alt: "The Riverbend - Elevation",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/the-riverbend/living-room.jpg",
-        alt: "The Riverbend - Living Room",
-        type: "interior",
+        src: RiverbendElevation1,
+        alt: "The Riverbend - Elevation 1",
+        type: "elevation",
       },
       {
-        src: "/assets/plans/the-riverbend/kitchen.jpg",
-        alt: "The Riverbend - Kitchen",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-riverbend/owners-suite.jpg",
-        alt: "The Riverbend - Owner's Suite",
-        type: "interior",
-      },
-      {
-        src: "/assets/plans/the-riverbend/floor-plan.jpg",
-        alt: "The Riverbend - Floor Plan",
-        type: "floorplan",
+        src: RiverbendElevation2,
+        alt: "The Riverbend - Elevation 2",
+        type: "elevation",
       },
     ],
     
