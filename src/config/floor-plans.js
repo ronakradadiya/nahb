@@ -92,8 +92,8 @@ export const floorPlans = [
     images: [
       {
         src: HavenwoodExterior,
-        alt: "HavenWood - Exterior View",
-        type: "exterior",
+        alt: "HavenWood - Elevation",
+        type: "elevation",
       },
       {
         src: HavenwoodElevation1,
@@ -139,8 +139,8 @@ export const floorPlans = [
     images: [
       {
         src: SterlingExterior,
-        alt: "The Sterling - Exterior View",
-        type: "exterior",
+        alt: "The Sterling - Elevation",
+        type: "elevation",
       },
       {
         src: SterlingElevation1,
@@ -199,8 +199,8 @@ export const floorPlans = [
     images: [
       {
         src: BrooksideExterior,
-        alt: "Brookside - Exterior View",
-        type: "exterior",
+        alt: "Brookside - Elevation",
+        type: "elevation",
       },
       {
         src: BrooksideElevation1,
@@ -246,8 +246,8 @@ export const floorPlans = [
     images: [
       {
         src: KirkwoodExterior,
-        alt: "Kirkwood - Exterior View",
-        type: "exterior",
+        alt: "Kirkwood - Elevation",
+        type: "elevation",
       },
       {
         src: KirkwoodElevation1,
@@ -298,8 +298,8 @@ export const floorPlans = [
     images: [
       {
         src: IngramExterior,
-        alt: "Ingram - Exterior View",
-        type: "exterior",
+        alt: "Ingram - Elevation",
+        type: "elevation",
       },
       {
         src: IngramElevation1,
@@ -350,8 +350,8 @@ export const floorPlans = [
     images: [
       {
         src: RiverbendExterior,
-        alt: "The Riverbend - Exterior View",
-        type: "exterior",
+        alt: "The Riverbend - Elevation",
+        type: "elevation",
       },
       {
         src: RiverbendElevation1,
