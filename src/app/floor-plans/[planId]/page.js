@@ -15,6 +15,7 @@ import { Section, Container, Icon } from "@/components/shared";
 import { 
   PlanOverview, 
   ImageGallery, 
+  FloorPlanViewer,
   FloorPlanConfigurator 
 } from "@/components/floor-plans";
 import { getPlanByIdOrSlug, floorPlans } from "@/config/floor-plans";
@@ -92,6 +93,25 @@ export default function FloorPlanDetailPage({ params }) {
 
         {/* Divider */}
         <hr className="border-dun-200 my-12" />
+
+        {/* Floor Plan Viewer Section */}
+        {plan.floorPlans && plan.floorPlans.length > 0 && (
+          <>
+            <div className="mb-12">
+              <h2 className="font-display text-2xl md:text-3xl font-medium text-ebony mb-8">
+                Floor Plan
+              </h2>
+
+              <FloorPlanViewer 
+                floorPlans={plan.floorPlans} 
+                planName={plan.name} 
+              />
+            </div>
+
+            {/* Divider */}
+            <hr className="border-dun-200 my-12" />
+          </>
+        )}
 
         {/* Configurator Section */}
         <div>
