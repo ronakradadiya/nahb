@@ -183,7 +183,7 @@ export default function FeaturesOptionsPage() {
       </Section>
 
       {/* Premium Lots Section - includes its own note */}
-      <PremiumLots showDescription={true} />
+      <PremiumLots showDescription={false} />
     </>
   );
 }

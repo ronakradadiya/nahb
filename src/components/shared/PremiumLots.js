@@ -121,12 +121,12 @@ export function PremiumLots({ className, showDescription = false, ...props }) {
         </div>
 
         {/* Note - Always shown */}
-        <div className="mt-8 bg-dun/30 rounded-lg p-4 text-center">
+        {/* <div className="mt-8 bg-dun/30 rounded-lg p-4 text-center">
           <p className="text-sm text-ebony/70">
             <strong className="text-ebony">Note:</strong> Premium lot pricing is in addition to the base home price. 
             Availability subject to change. Contact our sales team for current lot availability and site map.
           </p>
-        </div>
+        </div> */}
       </div>
     </Section>
   );

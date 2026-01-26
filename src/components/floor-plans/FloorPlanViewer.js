@@ -17,6 +17,7 @@ export function FloorPlanViewer({ floorPlans = [], planName = "", className, ...
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [isActive, setIsActive] = useState(false);
   const containerRef = useRef(null);
 
   if (floorPlans.length === 0) {
@@ -64,7 +65,7 @@ export function FloorPlanViewer({ floorPlans = [], planName = "", className, ...
   // Handle wheel event with non-passive listener
   useEffect(() => {
     const container = containerRef.current;
-    if (!container) return;
+    if (!container || !isActive) return;
 
     const handleWheel = (e) => {
       e.preventDefault();
@@ -78,7 +79,7 @@ export function FloorPlanViewer({ floorPlans = [], planName = "", className, ...
     return () => {
       container.removeEventListener('wheel', handleWheel);
     };
-  }, []);
+  }, [isActive]);
 
   return (
     <div className={cn("", className)} {...props}>
@@ -95,6 +96,26 @@ export function FloorPlanViewer({ floorPlans = [], planName = "", className, ...
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
       >
+        {/* Click to Explore Overlay */}
+        {!isActive && (
+          <div
+            className="absolute inset-0 z-20 bg-white/30 backdrop-blur-[1px] flex items-center justify-center cursor-pointer transition-all hover:bg-white/35"
+            onClick={() => setIsActive(true)}
+          >
+            <div className="bg-white/95 backdrop-blur-md rounded-lg shadow-2xl px-8 py-6 border-2 border-reseda ring-2 ring-reseda/20">
+              <div className="flex items-center gap-3">
+                <svg className="w-6 h-6 text-reseda" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                </svg>
+                <span className="text-lg font-semibold text-ebony">Click to Explore</span>
+              </div>
+              <p className="text-sm text-ebony/60 mt-2 text-center">
+                Zoom, pan, and view details
+              </p>
+            </div>
+          </div>
+        )}
+
         <div
           className="relative w-full h-full flex items-center justify-center p-8"
           style={{ minHeight: "600px" }}
