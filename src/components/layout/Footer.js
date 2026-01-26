@@ -24,9 +24,12 @@ export function Footer({ className, ...props }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Brand Column */}
             <div>
-              <h4 className="font-display text-xl font-semibold text-white mb-4">
+              <h4 className="font-display text-xl font-semibold text-white mb-2">
                 {siteConfig.name}
               </h4>
+              <p className="text-white/50 text-xs mb-4">
+                by {siteConfig.companyName}
+              </p>
               <p className="text-white/70 text-sm leading-relaxed max-w-md">
                 {siteConfig.description}
               </p>
@@ -58,7 +61,7 @@ export function Footer({ className, ...props }) {
       <div className="border-t border-white/10 py-6">
         <Container>
           <p className="text-sm text-white/50 text-center">
-            © {currentYear} {siteConfig.name}. All rights reserved.
+            © {currentYear} {siteConfig.companyName}. All rights reserved.
           </p>
         </Container>
       </div>

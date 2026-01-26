@@ -25,7 +25,10 @@ export function Hero({ className, ...props }) {
           {/* Left Column - Content */}
           <div>
             {/* Tagline */}
-            <p className="text-ebony font-medium tracking-wide mb-4">
+            <p className="text-reseda font-semibold tracking-wide mb-2 uppercase text-sm">
+              {siteConfig.companyName}
+            </p>
+            <p className="text-ebony/70 font-medium tracking-wide mb-4">
               Welcome to {siteConfig.name}
             </p>
 

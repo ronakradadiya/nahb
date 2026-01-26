@@ -2,13 +2,14 @@
  * Logo Component
  * 
  * Site logo with link to home
+ * Displays Viona Homes company logo
  */
 
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
-import LogoImage from "@/assets/logo.png";
+import LogoImage from "@/assets/viona-homes-logo.svg";
 
 export function Logo({ className, ...props }) {
   return (
@@ -24,16 +25,20 @@ export function Logo({ className, ...props }) {
       <div className="flex items-center justify-center">
         <Image
           src={LogoImage}
-          alt="Silverwood Heights"
-          className="object-contain max-w-[95px]"
+          alt={siteConfig.companyName}
+          className="object-contain max-w-[120px] h-auto"
           priority
+          style={{
+            width: '80px',
+            height: 'auto',
+          }}
         />
       </div>
 
-      {/* Logo Text */}
+      {/* Optional: Logo Text can be uncommented if needed */}
       {/* <div className="flex flex-col">
         <span className="font-display text-lg font-semibold text-ebony leading-tight group-hover:text-reseda transition-colors">
-          {siteConfig.name}
+          {siteConfig.companyName}
         </span>
         <span className="text-xs text-ebony/60 tracking-wide uppercase">
           {siteConfig.tagline}

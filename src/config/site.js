@@ -4,16 +4,20 @@
  */
 
 export const siteConfig = {
+  // Company Information
+  companyName: "Viona Homes",
+  
+  // Community/Product Information
   name: "Silverwood Heights",
   tagline: "Luxury Single Family Homes",
   description:
-    "Discover premium single family homes at Silverwood Heights. Thoughtfully designed floor plans with customizable upgrade options for modern living.",
+    "Discover premium single family homes at Silverwood Heights by Viona Homes. Thoughtfully designed floor plans with customizable upgrade options for modern living.",
   url: "https://silverwoodheights.com",
   
   // Contact Information
   contact: {
     phone: "(555) 123-4567",
-    email: "info@silverwoodheights.com",
+    email: "info@vionahomes.com",
     address: {
       street: "123 Silverwood Drive",
       city: "Phoenix",
@@ -31,19 +35,19 @@ export const siteConfig = {
 
   // Social Media Links
   social: {
-    facebook: "https://facebook.com/silverwoodheights",
-    instagram: "https://instagram.com/silverwoodheights",
-    pinterest: "https://pinterest.com/silverwoodheights",
+    facebook: "https://facebook.com/vionahomes",
+    instagram: "https://instagram.com/vionahomes",
+    pinterest: "https://pinterest.com/vionahomes",
   },
 
   // SEO Defaults
   seo: {
-    titleTemplate: "%s | Silverwood Heights",
-    defaultTitle: "Silverwood Heights | Luxury Single Family Homes",
+    titleTemplate: "%s | Silverwood Heights by Viona Homes",
+    defaultTitle: "Silverwood Heights | Luxury Homes by Viona Homes",
     openGraph: {
       type: "website",
       locale: "en_US",
-      siteName: "Silverwood Heights",
+      siteName: "Silverwood Heights by Viona Homes",
     },
   },
 };

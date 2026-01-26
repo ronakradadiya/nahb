@@ -13,7 +13,7 @@ import { teamConfig } from "@/config/team";
 // Page metadata
 export const metadata = {
   title: "About Us",
-  description: "Learn about Silver Wood Heights - our story, values, and commitment to building quality homes for families.",
+  description: "Learn about Silverwood Heights by Viona Homes - our story, values, and commitment to building quality homes for families.",
 };
 
 export default function AboutPage() {
@@ -22,20 +22,8 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={hero.image}
-            alt="Silver Wood Heights community"
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-ebony/60" />
-        </div>
-
-        <Container className="relative z-10">
+      <section className="relative py-20 md:py-28 bg-reseda">
+        <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-display font-medium text-white mb-6">
               {hero.title}
@@ -95,7 +83,7 @@ export default function AboutPage() {
       </Section>
 
       {/* CTA Section */}
-      <section className="bg-ebony py-16">
+      <section className="bg-reseda py-16">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-display font-medium text-white mb-4">
