@@ -230,3 +230,19 @@ export function formatRelativeTime(date) {
   
   return "Just now";
 }
+
+/**
+ * Format price per square foot
+ * 
+ * @param {number} price - Price in dollars
+ * @param {number} sqft - Square footage
+ * @returns {string} Formatted string
+ * 
+ * @example
+ * formatPricePerSqft(385000, 2156) // "$178.57"
+ */
+export function formatPricePerSqft(price, sqft) {
+  if (!sqft || !price) return "N/A";
+  const pricePerSqft = price / sqft;
+  return `$${pricePerSqft.toFixed(2)}`;
+}
