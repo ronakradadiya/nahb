@@ -83,7 +83,7 @@ export const floorPlans = [
     hasLoft: false,
     
     // Pricing
-    basePrice: 496000,
+    basePrice: 470000,
     
     // Description
     description:
@@ -142,7 +142,7 @@ export const floorPlans = [
     garage: 2,
     hasLoft: true,
     
-    basePrice: 486000,
+    basePrice: 484000,
     
     description:
       "The Sterling combines elegance with functionality. This well-appointed home offers generous living spaces and modern conveniences throughout.",
@@ -216,7 +216,7 @@ export const floorPlans = [
     garage: 2,
     hasLoft: false,
     
-    basePrice: 515000,
+    basePrice: 499990,
     
     description:
       "The Brookside offers a perfect balance of space and style. With four bedrooms and well-designed living areas, this home is ideal for growing families.",
@@ -272,7 +272,7 @@ export const floorPlans = [
     garage: 2,
     hasLoft: false,
     
-    basePrice: 595000,
+    basePrice: 559990,
     
     description:
       "The Kirkwood delivers exceptional living space with thoughtful details throughout. This home offers room to grow with luxurious touches in every corner.",
@@ -338,7 +338,7 @@ export const floorPlans = [
     garage: 2,
     hasLoft: false,
     
-    basePrice: 605000,
+    basePrice: 564990,
     
     description:
       "The Ingram offers maximum flexibility with five bedrooms. Whether you need home offices, guest rooms, or space for a large family, this home delivers.",
@@ -404,7 +404,7 @@ export const floorPlans = [
     garage: 2,
     hasLoft: false,
     
-    basePrice: 635000,
+    basePrice: 599990,
     
     description:
       "The Riverbend is our premier home offering expansive living spaces and premium finishes. This home showcases the best of modern design and timeless elegance.",
